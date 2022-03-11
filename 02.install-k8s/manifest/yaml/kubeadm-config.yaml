@@ -8,7 +8,7 @@ nodeRegistration:
 ---
 apiVersion: kubeadm.k8s.io/v1beta2
 kind: ClusterConfiguration
-kubernetesVersion: {k8sVersion}
+kubernetesVersion: v1.19.4
 controlPlaneEndpoint: {apiServer}:6443
 imageRepository: {imageRegistry}/k8s.gcr.io
 networking:
