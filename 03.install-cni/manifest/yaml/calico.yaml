@@ -3843,6 +3843,7 @@ spec:
           operator: Exists
         - key: node-role.kubernetes.io/master
           effect: NoSchedule
+#only-master scheduling option
       serviceAccountName: calico-kube-controllers
       priorityClassName: system-cluster-critical
       containers:
