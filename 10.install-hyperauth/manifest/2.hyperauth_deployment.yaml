@@ -34,7 +34,7 @@ spec:
           name: tmax-realm-import-config
       containers:
       - name: hyperauth
-        image: tmaxcloudck/hyperauth:latest  #latest
+        image: tmaxcloudck/hyperauth:{HYPERAUTH_VERSION}  #latest
         args: ["-c standalone-ha.xml", "-Dkeycloak.profile.feature.upload_scripts=enabled", "-Dkeycloak.profile.feature.docker=enabled -b 0.0.0.0"]                
         env:
         - name: KEYCLOAK_IMPORT
