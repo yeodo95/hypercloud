@@ -11,7 +11,7 @@ sed -i 's/v0.9.3/'${METALLB_VERSION}'/g' yaml/metallb.yaml
 sed -i 's/metallb\/speaker/'${REGISTRY}'\/metallb\/speaker/g' yaml/metallb.yaml 
 sed -i 's/metallb\/controller/'${REGISTRY}'\/metallb\/controller/g' yaml/metallb.yaml 
 
-sed -i 's/{ADDRESS-POOL}/'${ADDRESS_POOL}'\/metallb\/controller/g' yaml/metallb_cidr.yaml 
+sed -i 's/{ADDRESS-POOL}/'${ADDRESS_POOL}'/g' yaml/metallb_cidr.yaml 
 
 kubectl apply -f yaml/metallb_namespace.yaml
 

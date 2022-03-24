@@ -9,4 +9,4 @@
         - name: default
           protocol: layer2
           addresses:
-          - ${ADDRESS-POOL}
+          - {ADDRESS-POOL}

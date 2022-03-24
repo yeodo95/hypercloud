@@ -1,4 +1,4 @@
-echo -n "[metalLB] Enter Node ip:port : "
+echo -n "[ingress] Enter Node ip:port : "
 read REGISTRY
 
 export NGINX_INGRESS_VERSION=0.33.0
