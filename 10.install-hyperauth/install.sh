@@ -3,6 +3,8 @@ read REGISTRY
 
 export POSTGRES_VERSION=9.6.2-alpine
 export HYPERAUTH_VERSION=1.1.1.37
+export ZOOKEEPER_VERSION=3.4.6
+export KAFKA_VERSION=2.12-2.0.1
 
 ./img_load.sh
 
@@ -22,4 +24,7 @@ sed -i'' "s/tmaxcloudck/"${REGISTRY}"/g" 2.hyperauth_deployment.yaml
 sed -i'' "s/{HYPERAUTH_VERSION}/"${HYPERAUTH_VERSION}"/g" 2.hyperauth_deployment.yaml
 kubectl apply -f 2.hyperauth_deployment.yaml
 kubectl get svc hyperauth -n hyperauth
+
+kubectl apply -f 3.kafka_deployment.yaml
+
 popd
