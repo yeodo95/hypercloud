@@ -19,4 +19,7 @@ export MASTER_IP
 export SERVICE_SUBNET
 export POD_SUBNET
 chmod +x step_0.sh step_1.sh step_2.sh step_3.sh
-./step_0.sh ./step_1.sh ./step_2.sh ./step_3.sh
+./step_0.sh 
+./step_1.sh 
+./step_2.sh 
+./step_3.sh

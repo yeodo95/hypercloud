@@ -5,7 +5,9 @@ sed -i'' "s@{apiServer}@$MASTER_IP@g" ./manifest/yaml/kubeadm-config.yaml
 sed -i'' "s@{serviceSubnet}@$SERVICE_SUBNET@g" ./manifest/yaml/kubeadm-config.yaml
 sed -i'' "s@{podSubnet}@$POD_SUBNET@g" ./manifest/yaml/kubeadm-config.yaml
 
-sudo kubeadm init --config=./manifest/yaml/kubeadm-config.yaml
+pushd manifest/yaml/
+sudo kubeadm init --config=kubeadm-config.yaml
+popd
 
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
