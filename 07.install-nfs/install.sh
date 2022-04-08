@@ -1,8 +1,8 @@
 yum install nfs-utils
 
-git clone -b 5.0 --single-branch https://github.com/yeodo95/hypercloud.git
-mv hypercloud/04.install-nfs/provisioner/deploy/ .
-rm -rf hypercloud/
+#git clone -b 5.0 --single-branch https://github.com/yeodo95/hypercloud.git
+#mv hypercloud/04.install-nfs/provisioner/deploy/ .
+#rm -rf hypercloud/
 
 echo -n "[nfs] Enter nfs 'namespace' Name : "
 

@@ -1,6 +1,6 @@
-git clone -b 5.0 --single-branch https://github.com/yeodo95/hypercloud.git
-mv hypercloud/02.install-k8s/* ./
-rm -rf hypercloud/
+#git clone -b 5.0 --single-branch https://github.com/yeodo95/hypercloud.git
+#mv hypercloud/02.install-k8s/* ./
+#rm -rf hypercloud/
 
 echo -n "[k8s] Enter hostname : "
 read HOSTNAME

@@ -1,4 +1,4 @@
-echo -n "[metalLB] Enter Node ip:port : "
+echo -n "[metalLB] Enter REGISTRY ip:port : "
 read REGISTRY
 
 export METALLB_VERSION=v0.9.3

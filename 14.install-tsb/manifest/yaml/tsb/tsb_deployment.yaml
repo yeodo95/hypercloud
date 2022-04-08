@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: template-service-broker
+  name: template-service-broker
+  namespace: tsb-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: template-service-broker
+  template:
+    metadata:
+      labels:
+        app: template-service-broker
+    spec:
+      serviceAccountName: tsb-sa
+      containers:
+      - image: 192.168.178.169:5000/tmaxcloudck/tsb:0.1.4
+        name: tsb
+        imagePullPolicy: Always

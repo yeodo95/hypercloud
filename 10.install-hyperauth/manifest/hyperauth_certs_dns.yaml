@@ -13,8 +13,6 @@ spec:
     - key encipherment
     - server auth
     - client auth
-  ipAddresses:
-    - {HYPERAUTH_EXTERNAL_IP}  
   dnsNames:
     - {HYPERAUTH_EXTERNAL_DNS}
     - tmax-cloud
